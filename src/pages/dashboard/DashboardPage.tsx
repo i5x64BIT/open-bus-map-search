@@ -50,6 +50,7 @@ const DashboardPage = () => {
               time={startDate}
               onChange={(data) => setStartDate(data)}
               customLabel={t('start')}
+              maxDate={endDate}
             />
           </Grid>
           <Grid xs={6}>
@@ -57,6 +58,7 @@ const DashboardPage = () => {
               time={endDate}
               onChange={(data) => setEndDate(data)}
               customLabel={t('end')}
+              minDate={startDate}
             />
           </Grid>
         </Grid>
